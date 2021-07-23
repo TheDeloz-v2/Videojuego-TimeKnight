@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=Jugador
+comment0.text=\r\n\ \r\n
+comment1.params=
+comment1.target=Jugador()
+comment2.params=
+comment2.target=void\ act()
+comment3.params=
+comment3.target=void\ Girar()
+comment4.params=
+comment4.target=void\ Mover()
+comment5.params=
+comment5.target=void\ Disparar()
+comment6.params=
+comment6.target=void\ Muerte()
+numComments=7
