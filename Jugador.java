@@ -13,7 +13,13 @@ public class Jugador extends Actor
     int speed = 4;
     int tiempo = 0;
     int vida = 10;
+    Habilidad habilidad;
     public Jugador(){
+        getImage().setColor(Color.BLACK);
+        getImage().fillRect(50, 35, 70, 10);
+    }
+    public Jugador(Habilidad habilidad){
+        
         getImage().setColor(Color.BLACK);
         getImage().fillRect(50, 35, 70, 10);
     }
@@ -21,8 +27,8 @@ public class Jugador extends Actor
         Girar();
         Mover();
         Disparar();
-        Muerte();
         tiempo++;
+        GolpeDuende();
     }
     public void Girar(){
     if (Greenfoot.getMouseInfo() != null)
@@ -49,10 +55,12 @@ public class Jugador extends Actor
             disparo.setRotation(getRotation());
     }
     }
-    public void Muerte(){
-        if(isTouching(Duende.class)){
-            getWorld().showText("- YOU DIED -\nTiempo de vida: "+ (tiempo/100), getWorld().getWidth()/2, getWorld().getHeight()/2);
-            Greenfoot.stop();
+    public boolean GolpeDuende(){
+        Actor duende = getOneObjectAtOffset(0,0,Duende.class);
+        if(duende != null){
+            return true;
+        } else {
+            return false;
         }
     }
 }

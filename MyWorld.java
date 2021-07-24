@@ -14,13 +14,23 @@ public class MyWorld extends World
     int count = 0;
     int velocidadAparicion = 70;
     int randomAparicion;
-    public Jugador main = new Jugador();
+    Jugador main = new Jugador();
     public Puntuacion contador = new Puntuacion();
+    public Salud salud = new Salud();
+    public BarraSalud barraSalud = new BarraSalud();
+    public Habilidad habilidad = new Habilidad();
     public MyWorld()
     {
         super(1000, 700, 1);
+        main = new Jugador(habilidad);
         addObject(main, getWidth()/2, getHeight()/2);
         addObject(contador, 130, 40);
+        addObject(salud, 865, 40);
+        addObject(barraSalud, 865, 90);
+        addObject(habilidad, main.getX()+10, main.getY()-80);
+    }
+    public Jugador getJugador(){
+        return main;
     }
     public void act(){
         count++;

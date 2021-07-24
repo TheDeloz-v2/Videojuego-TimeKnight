@@ -12,8 +12,11 @@ public class Salud extends Actor
      * Act - do whatever the Salud wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
+    public Salud(){
+        setImage(new GreenfootImage("Salud", 40, Color.BLACK, new Color (0,0,0,0)));
+    }
     public void act() 
     {
-        // Add your action code here.
+        setImage(new GreenfootImage("Salud", 40, Color.BLACK, new Color (0,0,0,0)));
     }    
 }
