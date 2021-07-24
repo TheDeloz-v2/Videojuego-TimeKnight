@@ -42,8 +42,5 @@ public class Habilidad extends Actor
         if(contador % 5==0){    
             habilidad_contador++;
         }
-        if(habilidad_contador >= 100){
-            habilidad_contador = 0;
-        }
     }
 }

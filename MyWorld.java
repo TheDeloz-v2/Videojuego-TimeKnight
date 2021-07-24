@@ -12,7 +12,7 @@ public class MyWorld extends World
      * Constructor for objects of class MyWorld.
      */
     int count = 0;
-    int velocidadAparicion = 70;
+    int velocidadAparicion = 60;
     int randomAparicion;
     Jugador main = new Jugador();
     public Puntuacion contador = new Puntuacion();
@@ -34,6 +34,10 @@ public class MyWorld extends World
     }
     public void act(){
         count++;
+        
+        while(Greenfoot.isKeyDown("p")){
+            Greenfoot.delay(1);
+        }
         aparecerDuendes();
     }
     public void aparecerDuendes(){

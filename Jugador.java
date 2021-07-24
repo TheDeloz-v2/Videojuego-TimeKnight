@@ -13,13 +13,14 @@ public class Jugador extends Actor
     int speed = 4;
     int tiempo = 0;
     int vida = 10;
+    int Hcontador;
     Habilidad habilidad;
     public Jugador(){
         getImage().setColor(Color.BLACK);
         getImage().fillRect(50, 35, 70, 10);
     }
     public Jugador(Habilidad habilidad){
-        
+        this.habilidad = habilidad;
         getImage().setColor(Color.BLACK);
         getImage().fillRect(50, 35, 70, 10);
     }
@@ -28,6 +29,7 @@ public class Jugador extends Actor
         Mover();
         Disparar();
         tiempo++;
+        UsarHabilidad();
         GolpeDuende();
     }
     public void Girar(){
@@ -54,6 +56,41 @@ public class Jugador extends Actor
             getWorld().addObject(disparo, getX(), getY());
             disparo.setRotation(getRotation());
     }
+    }
+    public void UsarHabilidad(){
+        if(habilidad.habilidad_contador > 99 && Hcontador <30){
+            Disparo disparo = new Disparo();
+            getWorld().addObject(disparo, getX(), getY());
+            disparo.setRotation(getRotation()-60);
+            disparo.move(20);
+            Disparo disparo2 = new Disparo();
+            getWorld().addObject(disparo2, getX(), getY());
+            disparo2.setRotation(getRotation()+60);
+            disparo2.move(20);
+            Disparo disparo3 = new Disparo();
+            getWorld().addObject(disparo3, getX(), getY());
+            disparo3.setRotation(getRotation());
+            disparo3.move(20);
+            
+            Disparo disparo4 = new Disparo();
+            getWorld().addObject(disparo4, getX(), getY());
+            disparo4.setRotation(getRotation()-180);
+            disparo4.move(20);
+            Disparo disparo5 = new Disparo();
+            getWorld().addObject(disparo5, getX(), getY());
+            disparo5.setRotation(getRotation()+120);
+            disparo5.move(20);
+            Disparo disparo6 = new Disparo();
+            getWorld().addObject(disparo6, getX(), getY());
+            disparo6.setRotation(getRotation()-120);
+            disparo6.move(20);
+            
+            Hcontador++;
+        }
+        if(Hcontador>29){
+            habilidad.habilidad_contador = 0;
+            Hcontador = 0;
+        }
     }
     public boolean GolpeDuende(){
         Actor duende = getOneObjectAtOffset(0,0,Duende.class);
