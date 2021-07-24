@@ -27,7 +27,7 @@ public class MyWorld extends World
         addObject(contador, 130, 40);
         addObject(salud, 865, 40);
         addObject(barraSalud, 865, 90);
-        addObject(habilidad, main.getX()+10, main.getY()-80);
+        addObject(habilidad, main.getX(), main.getY()-50);
     }
     public Jugador getJugador(){
         return main;

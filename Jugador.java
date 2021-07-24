@@ -62,28 +62,28 @@ public class Jugador extends Actor
             Disparo disparo = new Disparo();
             getWorld().addObject(disparo, getX(), getY());
             disparo.setRotation(getRotation()-60);
-            disparo.move(20);
+            disparo.move(1);
             Disparo disparo2 = new Disparo();
             getWorld().addObject(disparo2, getX(), getY());
             disparo2.setRotation(getRotation()+60);
-            disparo2.move(20);
+            disparo2.move(1);
             Disparo disparo3 = new Disparo();
             getWorld().addObject(disparo3, getX(), getY());
             disparo3.setRotation(getRotation());
-            disparo3.move(20);
+            disparo3.move(1);
             
             Disparo disparo4 = new Disparo();
             getWorld().addObject(disparo4, getX(), getY());
             disparo4.setRotation(getRotation()-180);
-            disparo4.move(20);
+            disparo4.move(1);
             Disparo disparo5 = new Disparo();
             getWorld().addObject(disparo5, getX(), getY());
             disparo5.setRotation(getRotation()+120);
-            disparo5.move(20);
+            disparo5.move(1);
             Disparo disparo6 = new Disparo();
             getWorld().addObject(disparo6, getX(), getY());
             disparo6.setRotation(getRotation()-120);
-            disparo6.move(20);
+            disparo6.move(1);
             
             Hcontador++;
         }

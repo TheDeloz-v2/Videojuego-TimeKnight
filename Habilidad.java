@@ -31,7 +31,7 @@ public class Habilidad extends Actor
         getImage().fillRect(1,1,habilidad_contador, 10);
         World world = getWorld();
         MyWorld myWorld = (MyWorld)world;
-        setLocation(myWorld.getJugador().getX() - 5, myWorld.getJugador().getY() - 50);
+        setLocation(myWorld.getJugador().getX(), myWorld.getJugador().getY() - 50);
         UsarHabilidad();
     }
     public void super_habilidad(){
