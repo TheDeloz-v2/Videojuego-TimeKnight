@@ -1,22 +1,23 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Salud here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author: Diego Estuardo Lemus López
+ * @version: 
+ *          (Creación 21/07/2021)
+ *          (Última modificación 24/07/2021)
  */
 public class Salud extends Actor
 {
-    /**
-     * Act - do whatever the Salud wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
+    
+    //FUNCIONES//
+    
     public Salud(){
+        //Se genera gráficamente el label de salud
         setImage(new GreenfootImage("Salud", 40, Color.BLACK, new Color (0,0,0,0)));
     }
     public void act() 
     {
+        //Se genera gráficamente el label de salud
         setImage(new GreenfootImage("Salud", 40, Color.BLACK, new Color (0,0,0,0)));
     }    
 }

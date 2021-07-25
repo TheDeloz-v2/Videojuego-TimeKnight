@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Jugador
-comment0.text=\r\n\ \r\n
+comment0.text=\r\n\ @author\:\ Diego\ Estuardo\ Lemus\ L\u00F3pez\r\n\ @version\:\ \r\n\ \ \ \ \ \ \ \ \ \ (Creaci\u00F3n\ 21/07/2021)\r\n\ \ \ \ \ \ \ \ \ \ (\u00DAltima\ modificaci\u00F3n\ 24/07/2021)\r\n
 comment1.params=
 comment1.target=Jugador()
 comment2.params=habilidad

@@ -1,23 +1,24 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Disparo here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author: Diego Estuardo Lemus López
+ * @version: 
+ *          (Creación 21/07/2021)
+ *          (Última modificación 24/07/2021)
  */
 public class Disparo extends Actor
 {
-    /**
-     * Act - do whatever the Disparo wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
+    
+    //FUNCIONES//
+    
     public Disparo(){
     }
     
+    //Función Acción
     public void act() 
     {
         move(10);
+        //En caso de chocar con borde, desaparecer
         if(isAtEdge()){
             getWorld().removeObject(this);
         }
