@@ -57,18 +57,30 @@ public class Jugador extends Actor
         //Derecha
         if(Greenfoot.isKeyDown("d")){
             setLocation(getX() + speed, getY());
+            if(choqueBloque()){
+                setLocation(getX() - speed, getY());
+            }
         }
         //Izquierda
         if(Greenfoot.isKeyDown("a")){
-            setLocation(getX() - speed, getY()); 
+            setLocation(getX() - speed, getY());
+            if(choqueBloque()){
+                setLocation(getX() + speed, getY());
+            }
         }
         //Arriba
         if(Greenfoot.isKeyDown("w")){
-            setLocation(getX() , getY() - speed); 
+            setLocation(getX() , getY() - speed);
+            if(choqueBloque()){
+                setLocation(getX(), getY() + speed);
+            }
         }
         //Abajo
         if(Greenfoot.isKeyDown("s")){
-            setLocation(getX() , getY() + speed); 
+            setLocation(getX() , getY() + speed);
+            if(choqueBloque()){
+                setLocation(getX(), getY() - speed);
+            }
         }
     }
     
@@ -122,6 +134,14 @@ public class Jugador extends Actor
         if(Hcontador>29){
             habilidad.habilidad_contador = 0;
             Hcontador = 0;
+        }
+    }
+    
+    public boolean choqueBloque(){
+        if (this.isTouching(Bloque.class)){
+            return true;
+        }else{
+            return false;
         }
     }
     

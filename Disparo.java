@@ -22,5 +22,8 @@ public class Disparo extends Actor
         if(isAtEdge()){
             getWorld().removeObject(this);
         }
+        else if (this.isTouching(Bloque.class)){
+            getWorld().removeObject(this);
+        }
     }    
 }

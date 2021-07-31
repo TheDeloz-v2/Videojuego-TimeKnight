@@ -20,18 +20,38 @@ public class MyWorld extends World
     public Salud salud = new Salud();
     public BarraSalud barraSalud = new BarraSalud();
     public Habilidad habilidad = new Habilidad();
+    public Bloque bloque = new Bloque();
     
     //FUNCIONES//
     public MyWorld()
     {
         //Medidas del mundo
-        super(1000, 700, 1);
+        super(1200, 700, 1);
         main = new Jugador(habilidad);
         //Se agregan los objetos
         addObject(main, getWidth()/2, getHeight()/2);
         addObject(contador, 130, 40);
         addObject(salud, 865, 40);
         addObject(barraSalud, 865, 90);
+        
+        BloqueH bh1 = new BloqueH();
+        addObject(bh1, 700, 200);
+        BloqueH bh2 = new BloqueH();
+        addObject(bh2, 300, 200);
+        BloqueH bh3 = new BloqueH();
+        addObject(bh3, 700, 540);
+        BloqueH bh4 = new BloqueH();
+        addObject(bh4, 300, 540);
+        
+        BloqueV bv1 = new BloqueV();
+        addObject(bv1, 810, 310);
+        BloqueV bv2 = new BloqueV();
+        addObject(bv2, 190, 310);
+        //BloqueV bv3 = new BloqueV();
+        //addObject(bv3, 810, 90);
+        //BloqueV bv4 = new BloqueV();
+        //addObject(bv4, 865, 90);
+        
         addObject(habilidad, main.getX(), main.getY()-50);
     }
     

@@ -15,6 +15,7 @@ public class Duende extends Actor
     //VARIABLES//
     int count;
     int vida = 3;
+    int speed = 1;
     Jugador jugador;
     Puntuacion contador;
     
@@ -33,11 +34,22 @@ public class Duende extends Actor
         Impacto();
     }
     
+    public boolean choqueBloque(){
+        if (this.isTouching(Bloque.class)){
+            return true;
+        }else{
+            return false;
+        }
+    }
+    
     //Función Mover
     public void Mover(){
         move(1);
         //Se mueve hacia el jugador
         turnTowards(jugador.getX(), jugador.getY());
+        if(choqueBloque()){
+                setLocation(getX(), getY() + speed);
+            }
     }
     
     //Función Impacto de Disparo
