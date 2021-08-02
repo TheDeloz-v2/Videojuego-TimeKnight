@@ -6,7 +6,7 @@ import greenfoot.*;
  * @author: Diego Estuardo Lemus López
  * @version: 
  *          (Creación 21/07/2021)
- *          (Última modificación 24/07/2021)
+ *          (Última modificación 01/08/2021)
  */
 public class Jugador extends Actor
 {
@@ -42,6 +42,7 @@ public class Jugador extends Actor
         tiempo++;
         UsarHabilidad();
         GolpeDuende();
+        GolpeFantasma();
     }
     
     //Función Girar
@@ -137,6 +138,7 @@ public class Jugador extends Actor
         }
     }
     
+    //Choque con bloque
     public boolean choqueBloque(){
         if (this.isTouching(Bloque.class)){
             return true;
@@ -149,6 +151,16 @@ public class Jugador extends Actor
     public boolean GolpeDuende(){
         Actor duende = getOneObjectAtOffset(0,0,Duende.class);
         if(duende != null){
+            return true;
+        } else {
+            return false;
+        }
+    }
+    
+    //Función Golpe de Fantasma
+    public boolean GolpeFantasma(){
+        Actor fantasma = getOneObjectAtOffset(0,0,Fantasma.class);
+        if(fantasma != null){
             return true;
         } else {
             return false;

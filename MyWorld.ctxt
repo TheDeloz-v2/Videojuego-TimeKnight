@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=MyWorld
-comment0.text=\r\n\ @author\:\ Diego\ Estuardo\ Lemus\ L\u00F3pez\r\n\ @version\:\ \r\n\ \ \ \ \ \ \ \ \ \ (Creaci\u00F3n\ 21/07/2021)\r\n\ \ \ \ \ \ \ \ \ \ (\u00DAltima\ modificaci\u00F3n\ 24/07/2021)\r\n
+comment0.text=\r\n\ @author\:\ Diego\ Estuardo\ Lemus\ L\u00F3pez\r\n\ @version\:\ \r\n\ \ \ \ \ \ \ \ \ \ (Creaci\u00F3n\ 21/07/2021)\r\n\ \ \ \ \ \ \ \ \ \ (\u00DAltima\ modificaci\u00F3n\ 01/08/2021)\r\n
 comment1.params=
 comment1.target=MyWorld()
 comment2.params=
@@ -9,4 +9,6 @@ comment3.params=
 comment3.target=void\ act()
 comment4.params=
 comment4.target=void\ aparecerDuendes()
-numComments=5
+comment5.params=
+comment5.target=void\ aparecerFantasmas()
+numComments=6

@@ -1,8 +1,10 @@
 #BlueJ class context
 comment0.target=Jugador
-comment0.text=\r\n\ @author\:\ Diego\ Estuardo\ Lemus\ L\u00F3pez\r\n\ @version\:\ \r\n\ \ \ \ \ \ \ \ \ \ (Creaci\u00F3n\ 21/07/2021)\r\n\ \ \ \ \ \ \ \ \ \ (\u00DAltima\ modificaci\u00F3n\ 24/07/2021)\r\n
+comment0.text=\r\n\ @author\:\ Diego\ Estuardo\ Lemus\ L\u00F3pez\r\n\ @version\:\ \r\n\ \ \ \ \ \ \ \ \ \ (Creaci\u00F3n\ 21/07/2021)\r\n\ \ \ \ \ \ \ \ \ \ (\u00DAltima\ modificaci\u00F3n\ 01/08/2021)\r\n
 comment1.params=
 comment1.target=Jugador()
+comment10.params=
+comment10.target=boolean\ GolpeFantasma()
 comment2.params=habilidad
 comment2.target=Jugador(Habilidad)
 comment3.params=
@@ -19,4 +21,4 @@ comment8.params=
 comment8.target=boolean\ choqueBloque()
 comment9.params=
 comment9.target=boolean\ GolpeDuende()
-numComments=10
+numComments=11

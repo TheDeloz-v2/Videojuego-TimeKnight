@@ -42,6 +42,9 @@ public class BarraSalud extends Actor
         if(myWorld.getJugador().GolpeDuende()){
             salud--;
         }
+        if(myWorld.getJugador().GolpeFantasma()){
+            salud--;
+        }
         //En caso de perder toda la salud
         if(salud<=0){
             getWorld().showText("- YOU DIED -\nTiempo de vida: "+ (myWorld.getJugador().tiempo/100) + " segundos.", getWorld().getWidth()/2, getWorld().getHeight()/2);

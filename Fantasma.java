@@ -1,24 +1,17 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
-/**
- * @author: Diego Estuardo Lemus López
- * @version: 
- *          (Creación 21/07/2021)
- *          (Última modificación 24/07/2021)
- */
-public class Duende extends Actor
+public class Fantasma extends Actor
 {
-    
     //VARIABLES//
     int count;
-    int vida = 3;
+    int vida = 1;
     int speed = 1;
     Jugador jugador;
     Puntuacion contador;
     
     //FUNCIONES//
     
-    public Duende(Jugador main,Puntuacion contador){
+    public Fantasma(Jugador main,Puntuacion contador){
         jugador = main;
         this.contador = contador;
     }
@@ -30,24 +23,12 @@ public class Duende extends Actor
         Mover();
         Impacto();
     }
-    
-    //Choque con bloque
-    public boolean choqueBloque(){
-        if (this.isTouching(Bloque.class)){
-            return true;
-        }else{
-            return false;
-        }
-    }
-    
+
     //Función Mover
     public void Mover(){
         move(1);
         //Se mueve hacia el jugador
         turnTowards(jugador.getX(), jugador.getY());
-        if(choqueBloque()){
-                setLocation(getX(), getY() + speed);
-            }
     }
     
     //Función Impacto de Disparo
@@ -64,4 +45,4 @@ public class Duende extends Actor
            getWorld().removeObject(this);
        }
     }
-}
+}    

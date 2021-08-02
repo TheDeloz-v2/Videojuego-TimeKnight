@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Fantasma
+comment1.params=main\ contador
+comment1.target=Fantasma(Jugador,\ Puntuacion)
+comment2.params=
+comment2.target=void\ act()
+comment3.params=
+comment3.target=void\ Mover()
+comment4.params=
+comment4.target=void\ Impacto()
+numComments=5
